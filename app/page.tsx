@@ -805,7 +805,7 @@ export default function Page() {
             </span>
           </div>
           <div className="flex items-center gap-6 w-full justify-end">
-            <ul className="hidden md:flex ml-auto justify-end gap-x-6 items-center">
+            <ul className="flex overflow-x-auto whitespace-nowrap hide-scrollbar max-w-[100vw] ml-auto justify-end gap-4 md:gap-6 items-center">
               <li>
                 <a
                   className="font-label-md text-label-md text-on-surface-variant hover:text-secondary hover:scale-105 hover:drop-shadow-[0_0_6px_rgba(45,212,191,0.4)] transition-all duration-300 ease-in-out"
@@ -906,14 +906,14 @@ export default function Page() {
         </div>
       </nav>
 
-      <main className="w-full max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop pb-24 overflow-x-hidden">
+      <main className="w-full max-w-container-max mx-auto px-4 sm:px-6 md:px-12 pb-24 overflow-x-hidden">
         {/* Hero / About Section */}
         <section
           className="py-24 grid grid-cols-1 md:grid-cols-12 gap-gutter items-center min-h-[560px]"
           id="home"
         >
           <div className="col-span-1 md:col-span-12">
-            <div className="mb-4 flex items-center gap-3">
+            <div className="mb-4 flex flex-wrap items-center gap-2 md:gap-4">
               <button
                 ref={badgeRef}
                 onClick={handleReboot}
@@ -948,33 +948,33 @@ export default function Page() {
                 OPEN_TO_WORK
               </span>
             </div>
-            <h1 className="font-headline-lg text-headline-lg text-white mb-3">
+            <h1 className="font-headline-lg text-5xl sm:text-6xl md:text-8xl text-white mb-3">
               Hi, I am{" "}
-              <span className="block font-mono text-6xl md:text-7xl mt-1">
+              <span className="block font-mono mt-1">
                 Dwyne.
               </span>
             </h1>
-            <p className="font-mono text-2xl text-secondary mb-4">
+            <p className="font-mono text-lg sm:text-xl md:text-2xl text-secondary mb-4">
               <TypingEffect key={resetCount} />
             </p>
-            <p className="font-body-lg text-body-lg text-gray-300 max-w-2xl mb-8">
+            <p className="font-body-lg text-sm sm:text-base md:text-lg text-gray-300 max-w-full md:max-w-2xl mb-8">
               Currently expanding my expertise into the cybersecurity domain to identify a specialized focus, reinforcing foundational competencies through industry-recognized certifications and practical security badges.
             </p>
-            <div className="flex gap-4">
+            <div className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
               <a
-                className="px-6 py-3 bg-background/40 backdrop-blur-md border border-secondary/30 text-foreground font-label-md text-label-md hover:scale-[1.02] hover:border-secondary transition-all duration-300 rounded"
+                className="w-full sm:w-auto inline-flex items-center justify-center px-6 py-3 bg-background/40 backdrop-blur-md border border-secondary/30 text-foreground font-label-md text-label-md hover:scale-[1.02] hover:border-secondary transition-all duration-300 rounded"
                 href="#projects"
               >
                 Execute_Projects
               </a>
               <a
-                className="group px-6 py-3 bg-background/40 backdrop-blur-md border border-secondary/30 text-foreground font-label-md text-label-md hover:scale-[1.02] hover:border-secondary transition-all duration-300 rounded flex items-center gap-2"
+                className="group w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3 bg-background/40 backdrop-blur-md border border-secondary/30 text-foreground font-label-md text-label-md hover:scale-[1.02] hover:border-secondary transition-all duration-300 rounded"
                 href="#contact"
               >
                 Initialize_Comms
               </a>
               <a
-                className="group px-6 py-3 bg-background/40 backdrop-blur-md border border-secondary/30 text-foreground font-label-md text-label-md hover:scale-[1.02] hover:border-secondary transition-all duration-300 rounded flex items-center gap-2"
+                className="group w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3 bg-background/40 backdrop-blur-md border border-secondary/30 text-foreground font-label-md text-label-md hover:scale-[1.02] hover:border-secondary transition-all duration-300 rounded"
                 href="/Resume_Dwyne-Scott-Japay.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -982,7 +982,7 @@ export default function Page() {
                 View_Resume.pdf
               </a>
             </div>
-            <div className="mt-12 grid grid-cols-3 gap-6 border-t border-outline-variant/30 pt-8">
+            <div className="mt-16 grid grid-cols-1 sm:grid-cols-3 gap-8 md:gap-12 text-center md:text-left border-t border-outline-variant/30 pt-8">
               <Counter value={4} label="Projects" />
               <Counter value={4} label="Certifications" />
               <Counter value={0} label="Write-ups" />
