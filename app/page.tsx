@@ -258,7 +258,8 @@ function Competency({ children }: { children: ReactNode }) {
   return (
     <li className="flex items-center gap-2.5 px-3 py-2.5 bg-surface-container/60 rounded border border-secondary/20 hover:scale-[1.02] hover:border-secondary transition-all duration-300">
       <span className="text-secondary font-mono text-xs shrink-0">[✓]</span>
-      <span className="font-body-sm text-body-sm text-gray-300">{children}</span>
+      {/* Changed font-body-sm to font-mono and adjusted text size */}
+      <span className="font-mono text-xs sm:text-sm text-gray-300">{children}</span>
     </li>
   );
 }
