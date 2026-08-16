@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { JetBrains_Mono, Roboto } from "next/font/google";
+import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 
 const roboto = Roboto({
@@ -28,6 +29,7 @@ export default function RootLayout({
     <html lang="en" className={`${roboto.variable} ${jetbrains.variable}`}>
       <body className="font-roboto antialiased bg-background text-foreground">
         {children}
+        <Analytics />
       </body>
     </html>
   );
