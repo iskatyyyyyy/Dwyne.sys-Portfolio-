@@ -14,9 +14,9 @@ const jetbrains = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Kernel Aesthetic - Portfolio",
+  title: "Dwyne.sys",
   description:
-    "Architecting secure, high-performance backend logic. Focused on system architecture, deep technical problem-solving, and building resilient infrastructure.",
+    "Personal portfolio and cybersecurity lab workspace.",
 };
 
 export default function RootLayout({

@@ -1481,7 +1481,7 @@ export default function Page() {
       <footer className="bg-background/20 backdrop-blur-lg border-t border-white/5 w-full">
         <div className="w-full px-margin-mobile md:px-margin-desktop py-8 max-w-container-max mx-auto">
           <p className="w-full text-center text-xs text-secondary/60 font-mono">
-            © 2026 Dwyne.sys | Trust nothing. Verify everything.
+            © 2026 Dwyne.sys | Securing the unseen. Building the unbreakable.
           </p>
         </div>
       </footer>
